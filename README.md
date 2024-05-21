@@ -29,8 +29,14 @@ This Readme consists of two sections:
     
     l.  Before running the terraform make sure to check the variables.tf file and give values accordingly.
 
+## Commands to run the terraform file
+    a. change directory to the web_app folder.
+    b. run **terraform init** to initialise.
+    c. run terraform plan to validate if things are aligned properly.
+    d. run terraform apply so that infrastructure is created.
+    e. check the final output.
 
-2. ### Health Monitoring system
+3. ### Health Monitoring system
 
     We will use Python and AWS services like Lambda, SNS, and CloudWatch for a serverless solution.
     
