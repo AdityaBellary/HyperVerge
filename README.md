@@ -32,12 +32,20 @@ This Readme consists of two sections.
 
 
 2. Health Monitoring system
+
 We will use Python and AWS services like Lambda, SNS, and CloudWatch for a serverless solution.
+    
     a. Create a Lambda function that takes endpoints and alert_topic as inputs.
+
     b. The function will try to hit the endpoints and checks the status code of the response.
+
     c. The message is then sent to the user using the SNS topic.
-    d. To make it a run at intervals Set up a CloudWatch Event Rule to trigger the Lambda function at a specified interval (e.g., every 5 minutes).
+
+    d. To make it a run at intervals Set up a CloudWatch Event Rule to trigger the Lambda function at 
+    a specified interval (e.g., every 5 minutes).
+    
     e. Deploy the Lambda using AWS console or CLI.
+    
     f. Create an SNS topic and subscribe to the users email or phone number to receive alerts.
 
 sample test input for the function.
