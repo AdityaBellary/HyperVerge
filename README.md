@@ -47,11 +47,11 @@ This Readme consists of two sections.
     
     f. Create an SNS topic and subscribe to the users email or phone number to receive alerts.
 
-sample test input for the function.
+# Sample test input for the function.
 {
   "endpoints": [
     {"name": "Google", "url": "https://www.google.com"},
     {"name": "HyperVerge", "url": "https://hyperverge.co/"}
   ],
-  "alert_topic": "arn:aws:sns:us-west-2:<aws-account-id>:YourSNSTopic"
+  "alert_topic": "arn:aws:sns:us-west-2:aws-account-id:YourSNSTopic"
 }
