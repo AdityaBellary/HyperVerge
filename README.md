@@ -32,7 +32,8 @@ This Readme consists of two sections.
 
 2. Health Monitoring system
 
-We will use Python and AWS services like Lambda, SNS, and CloudWatch for a serverless solution.
+    We will use Python and AWS services like Lambda, SNS, and CloudWatch for a serverless solution.
+    
     a. Create a Lambda function that takes endpoints and alert_topic as inputs.
 
     b. The function will try to hit the endpoints and checks the status code of the response.
