@@ -3,7 +3,7 @@ This Readme consists of two sections.
     a. A terraform to provision a web application in a highly available environment using AWS EC2.
     b. A health monitoring system that checks the health of any given API endpoint(s) based on health check configuration provided by the users.
 
-1. Steps to create a web application using terraform.
+1. ### Steps to create a web application using terraform.
     a.  Initialise a provider. (AWS in this)
 
     b.  Create a VPC with a public subnet.
@@ -30,7 +30,7 @@ This Readme consists of two sections.
     l.  Before running the terraform make sure to check the variables.tf file and give values accordingly.
 
 
-2. Health Monitoring system
+2. ### Health Monitoring system
 
     We will use Python and AWS services like Lambda, SNS, and CloudWatch for a serverless solution.
     
@@ -47,7 +47,7 @@ This Readme consists of two sections.
     
     f. Create an SNS topic and subscribe to the users email or phone number to receive alerts.
 
-# Sample test input for the function.
+### Sample test input for the function.
 {
   "endpoints": [
     {"name": "Google", "url": "https://www.google.com"},
