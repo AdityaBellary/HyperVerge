@@ -1,8 +1,7 @@
 # HyperVerge
 This Readme consists of two sections.
-    1. A terraform to provision a web application in a highly available environment using AWS EC2.
-    
-    2. A health monitoring system that checks the health of any given API endpoint(s) based on health check configuration provided by the users.
+    a. A terraform to provision a web application in a highly available environment using AWS EC2.
+    b. A health monitoring system that checks the health of any given API endpoint(s) based on health check configuration provided by the users.
 
 1. Steps to create a web application using terraform.
     a.  Initialise a provider. (AWS in this)
@@ -34,7 +33,6 @@ This Readme consists of two sections.
 2. Health Monitoring system
 
 We will use Python and AWS services like Lambda, SNS, and CloudWatch for a serverless solution.
-    
     a. Create a Lambda function that takes endpoints and alert_topic as inputs.
 
     b. The function will try to hit the endpoints and checks the status code of the response.
