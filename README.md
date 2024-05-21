@@ -26,8 +26,10 @@ This Readme consists of two sections:
     scale-out.
     
     k.  Create a scale out and scale in policies.
+
+    l.  Create a backend.tf file to have state locking and storing of state file in S3.
     
-    l.  Before running the terraform make sure to check the variables.tf file and give values accordingly.
+    m.  Before running the terraform make sure to check the variables.tf file and give values accordingly.
 
 ## Commands to run the terraform file
     a. change directory to the web_app folder.
@@ -35,6 +37,8 @@ This Readme consists of two sections:
     c. run terraform plan to validate if things are aligned properly.
     d. run terraform apply so that infrastructure is created.
     e. check the final output.
+
+### Note:- For simplicity, have added the access and secret key as variables, but its a good practice to export it as environment variables or do aws configure and give the values.
 
 3. ### Health Monitoring system
 
