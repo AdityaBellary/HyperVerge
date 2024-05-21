@@ -3,6 +3,16 @@ variable "aws_region" {
   default     = "us-west-2"
 }
 
+variable "aws_access_key" {
+  description = "The AWS access key of the account to deploy"
+  default     = "<access-key>"
+}
+
+variable "aws_secret_key" {
+  description = "The AWS secret key of the account to deploy"
+  default     = "<secret-key>"
+}
+
 variable "vpc_cidr" {
   description = "The VPC_cidr range"
   default = "10.0.0.0/16"
@@ -36,4 +46,14 @@ variable "ami_id" {
 variable "instance_type" {
   description = "The instance type to use"
   default     = "t2.micro"
+}
+
+variable "s3_bucket" {
+  description = "The name of the S3 bucket for remote state storage"
+  default     = "hyperverge-state-bucket"
+}
+
+variable "dynamodb_table" {
+  description = "The name of the DynamoDB table for state locking"
+  default     = "hyperverge-terraform-lock"
 }
