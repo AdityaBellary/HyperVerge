@@ -57,7 +57,7 @@ This Readme consists of two sections:
     
     f. Create an SNS topic and subscribe to the users email or phone number to receive alerts.
 
-### Sample test input for the function.
+##### Sample test input for the function.
 {
   "endpoints": [
     {"name": "Google", "url": "https://www.google.com"},
