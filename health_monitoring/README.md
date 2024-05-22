@@ -7,7 +7,7 @@ To get the metrics we need to install node exporter on all our instances and to 
 
 The main high level design of the architecture is we will have a seperate instance where our prometheus will be running and based on the configuration we set, will scrape metrics and depending on the alerts we have set alertmanager will raise an incident to splunk which in the end will call the on-call user about the issue.
 
-Things to be installed.
+###### Things to be installed.
 1. Node exporter on all the instances to be monitored.
 2. prometheus on the monitoring server
 3. black box exporter on the prometheus server
@@ -16,7 +16,7 @@ Things to be installed.
 
 Sample config files:-
 
-promtheus job:
+```promtheus job:
 global:
   scrape_interval: 15s
   evaluation_interval: 15s
@@ -49,10 +49,10 @@ scrape_configs:
 
 rule_files:
   - "alert.rules.yml"
-
+```
 **----------------------------------------------------------**
 
-Alert rule sample:-
+```Alert rule sample:-
 groups:
   - name: example_alerts
     rules:
@@ -64,10 +64,10 @@ groups:
         annotations:
           summary: "High CPU usage on {{ $labels.instance }}"
           description: "CPU usage is above 80% for more than 1 minute."
-
+```
 **----------------------------------------------------------**
 
-Alertmanager sample:-
+```Alertmanager sample:-
 global:
   resolve_timeout: 5m
 
@@ -97,5 +97,5 @@ inhibit_rules:
     target_match:
       severity: 'warning'
     equal: ['alertname', 'instance']
-
+```
 **----------------------------------------------------------**
